@@ -35,9 +35,9 @@ button {
     color:white;
 }
 .container{
-    /* boxes not centered with page and education boxes lines not spaced apart */
     display: flex;
-    /* width: 800px; */
+    margin: 0px auto;
+    width: 50%;
 }
 .topleft, .bottomleft, .topright, .bottomright {
     border: 1px solid grey;
@@ -80,8 +80,11 @@ button {
 .bottomleft > .bottom > .bottom-contents {
     padding: 10px 20px;
 }
-.bottomleft > .bottom > .bottom-contents > label {
+.grey {
     color: grey;
+}
+.marginbottom {
+    margin-bottom: 15px;
 }
 .topright > .top, .bottomright > .top {
     width: 300px;
