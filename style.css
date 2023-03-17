@@ -7,8 +7,8 @@
 }
 .nav {
     display: flex;
-    background-color: darkslategray;
-    justify-content: space-between;
+    background-color: black;
+    justify-content: space-evenly;
     align-items: center;
 }
 .nav-title {
@@ -33,38 +33,37 @@ li {
 button {
     background-color: darkcyan;
     color:white;
-    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
 }
 .container{
+    /* boxes not centered with page and education boxes lines not spaced apart */
     display: flex;
+    /* width: 800px; */
 }
-.topleft {
-    /* box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19); */
+.topleft, .bottomleft, .topright, .bottomright {
+    border: 1px solid grey;
 }
 .topleft > .top {
-    width: 400px;
+    width: 500px;
     height: 100px;
     background-color: aqua;
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 .topleft > .bottom {
-    width: 400px;
+    width: 500px;
     height: 300px;
     background-color: white;
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 .topleft > .bottom > .bottom-contents {
     padding: 45px 20px;
+    font-size: 20px;
 }
 .bottomleft, .bottomright {
     position: relative;
     top: 100px;
 }
 .bottomleft > .top {
-    width: 400px;
-    height: 100px;
+    width: 500px;
+    height: 50px;
     background-color: darkslategray;
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
     font-size: 24px;
     color: white;
     display: flex;
@@ -74,47 +73,71 @@ button {
     padding: 0px 20px;
 }
 .bottomleft > .bottom {
-    width: 400px;
+    width: 500px;
     height: 200px;
     background-color: white;
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 .bottomleft > .bottom > .bottom-contents {
-    padding: 1px 20px;
+    padding: 10px 20px;
 }
-.topright > .top {
-    width: 400px;
-    height: 100px;
-    background-color: aqua;
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+.bottomleft > .bottom > .bottom-contents > label {
+    color: grey;
+}
+.topright > .top, .bottomright > .top {
+    width: 300px;
+    height: 75px;
+    background-color: darkslategray;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    font-size: 24px;
+}
+.topright > .top > label,  .bottomright > .top > label {
+    color: white;
+}
+.topright > .top > p {
+    border-radius: 50%;
+    width: 30px;
+    background-color: grey;
+    text-align: center;
+}
+.bottomright > .top > p {
+    border-radius: 50%;
+    width: 65px;
+    background-color: grey;
+    text-align: center;
 }
 .topright > .bottom {
-    width: 400px;
-    height: 300px;
+    width: 300px;
+    height: 200px;
     background-color: white;
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 .topright > .bottom > .bottom-contents {
-    padding: 45px 20px;
+    padding: 10px 20px;
+    font-size: 24px;
+}
+.row {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px;
 }
 .topleft, .topright {
     position: relative;
     top: 50px;
 }
-.bottomright > .top {
-    width: 400px;
-    height: 100px;
-    background-color: aqua;
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-}
 .bottomright > .bottom {
-    width: 400px;
+    width: 300px;
     height: 300px;
     background-color: white;
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 .bottomright > .bottom > .bottom-contents {
-    padding: 45px 20px;
+    padding: 10px 20px;
+    font-size: 24px;
+}
+.row > img, .row2 > img, .buttons > img {
+    height: 45px;
+    width: 45px;
 }
 #icon {
     width: 100px;
@@ -132,12 +155,19 @@ button {
     align-items: center;
     padding: 10px 0px;
 }
+.bottom2 {
+    display: flex;
+    align-items: center;
+    text-align: center;
+    font-size: 18px;
+    border-top: 1px solid grey;
+    padding: 5px 20px;
+}
 .col1 {
     position: relative;
     left: 50px;
 }
 .col2 {
-    /* display: flex; */
     position: relative;
     left: 100px;
 }
