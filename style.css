@@ -1,0 +1,143 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+}
+.nav {
+    display: flex;
+    background-color: darkslategray;
+    justify-content: space-between;
+    align-items: center;
+}
+.nav-title {
+    color:white;
+    margin-left: 50px;
+}
+.nav-links {
+    display: flex;
+    color: white;
+    align-items: center;
+    justify-content: space-around;
+    width: 500px;
+}
+.nav-links > li > a {
+    color: white;
+    text-decoration: none;
+    font-size: 20px;
+}
+li {
+    list-style: none;
+}
+button {
+    background-color: darkcyan;
+    color:white;
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+}
+.container{
+    display: flex;
+}
+.topleft {
+    /* box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19); */
+}
+.topleft > .top {
+    width: 400px;
+    height: 100px;
+    background-color: aqua;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+.topleft > .bottom {
+    width: 400px;
+    height: 300px;
+    background-color: white;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+.topleft > .bottom > .bottom-contents {
+    padding: 45px 20px;
+}
+.bottomleft, .bottomright {
+    position: relative;
+    top: 100px;
+}
+.bottomleft > .top {
+    width: 400px;
+    height: 100px;
+    background-color: darkslategray;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    font-size: 24px;
+    color: white;
+    display: flex;
+    align-items: center;
+}
+.bottomleft > .top > label {
+    padding: 0px 20px;
+}
+.bottomleft > .bottom {
+    width: 400px;
+    height: 200px;
+    background-color: white;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+.bottomleft > .bottom > .bottom-contents {
+    padding: 1px 20px;
+}
+.topright > .top {
+    width: 400px;
+    height: 100px;
+    background-color: aqua;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+.topright > .bottom {
+    width: 400px;
+    height: 300px;
+    background-color: white;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+.topright > .bottom > .bottom-contents {
+    padding: 45px 20px;
+}
+.topleft, .topright {
+    position: relative;
+    top: 50px;
+}
+.bottomright > .top {
+    width: 400px;
+    height: 100px;
+    background-color: aqua;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+.bottomright > .bottom {
+    width: 400px;
+    height: 300px;
+    background-color: white;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+.bottomright > .bottom > .bottom-contents {
+    padding: 45px 20px;
+}
+#icon {
+    width: 100px;
+    height: 100px;
+    position: relative;
+    top: 50px;
+    left: 20px;
+}
+#loc, #gear {
+    height: 20px;
+    padding-right: 5px;
+}
+.bottom-contents > a, .location {
+    display: flex;
+    align-items: center;
+    padding: 10px 0px;
+}
+.col1 {
+    position: relative;
+    left: 50px;
+}
+.col2 {
+    /* display: flex; */
+    position: relative;
+    left: 100px;
+}
